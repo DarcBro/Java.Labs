@@ -1,42 +1,49 @@
 package rpis82.sergienko.oop.model;
 
-public class Space {
-
-
+public class Space
+{
     private Person person;
     private Vehicle vehicle;
 
-    public Space(Person person, Vehicle vehicle) {
+    public Space(Person person, Vehicle vehicle)
+    {
         this.person = person;
         this.vehicle = vehicle;
     }
 
-    public Space() {
+    public Space()
+    {
         this(Person.UNKNOWN_PERSON, new Vehicle());
     }
 
-    public Person getPerson() {
+    public Person getPerson()
+    {
         return person;
     }
 
-    public void setPerson(Person person) {
+    public void setPerson(Person person)
+    {
         this.person = person;
     }
 
-    public Vehicle getVehicle() {
+    public Vehicle getVehicle()
+    {
         return vehicle;
     }
 
-    public void setVehicle(Vehicle vehicle) {
+    public void setVehicle(Vehicle vehicle)
+    {
         this.vehicle = vehicle;
     }
 
-    public boolean isEmpty() {
+    public boolean isEmpty()
+    {
         return this.vehicle == null || this.vehicle.getRegistrationNumber().equals("");
     }
 
     @Override
-    public String toString() {
+    public String toString()
+    {
         return "Space{" +
                 "person=" + person +
                 ", vehicle=" + vehicle +

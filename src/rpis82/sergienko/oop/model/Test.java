@@ -1,17 +1,19 @@
 package rpis82.sergienko.oop.model;
 
-public class Test {
+public class Test
+{
 
     public static void main(String[] args) {
         lab1tests();
     }
 
-    public static void lab1tests(){
+    public static void lab1tests()
+    {
         Person testPerson1 = new Person("Puchkov","Dmitry");
         Person testPerson2 = new Person("Belyaev","Alexey");
 
-        Vehicle testVehicle1 = new Vehicle("000","KIA","Rio");
-        Vehicle testVehicle2 = new Vehicle("001","KIA","Ceed");
+        Vehicle testVehicle1 = new Vehicle("125","Toyota","Corolla");
+        Vehicle testVehicle2 = new Vehicle("312","Renault","Koleos");
         Vehicle empty = new Vehicle();
         Person person = Person.UNKNOWN_PERSON;
 

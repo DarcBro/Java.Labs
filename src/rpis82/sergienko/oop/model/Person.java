@@ -12,16 +12,19 @@ public class Person {
         this.firstName = firstName;
     }
 
-    public String getLastName() {
+    public String getLastName()
+    {
         return lastName;
     }
 
-    public String getFirstName() {
+    public String getFirstName()
+    {
         return firstName;
     }
 
     @Override
-    public String toString() {
+    public String toString()
+    {
         return "Person{" +
                 "lastName='" + lastName + '\'' +
                 ", firstName='" + firstName + '\'' +
